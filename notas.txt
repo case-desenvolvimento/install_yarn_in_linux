@@ -1,0 +1,15 @@
+# COMO INSTALAR O YARN NO UBUNTO OU EM VERSÕES DERIVADAS
+
+adicionamos a chave GPG necessária para garantir que os pacotes baixados são autênticos.Então, nós podemos adicionar o repositório Yarn, tudo isso com o seguinte comando:
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+Agora, tudo que nós temos que fazer é atualizar as origens do software e instalar o Yarn no Ubuntu usando a ferramenta APT.
+sudo apt update
+sudo apt-get install --no-install-recommends yarn
+
+verificar a versão que foi instalada:
+yarn –version
+
+Para remover o yarn
+sudo apt-get remove yarn && sudo apt-get purge yarn
