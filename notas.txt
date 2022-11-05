@@ -9,7 +9,7 @@ sudo apt update
 sudo apt-get install --no-install-recommends yarn
 
 verificar a versão que foi instalada:
-yarn –version
+yarn --version
 
 Para remover o yarn
 sudo apt-get remove yarn && sudo apt-get purge yarn
